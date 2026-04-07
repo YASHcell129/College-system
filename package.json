@@ -1,11 +1,12 @@
 {
   "name": "college-system",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "Backend/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "node Backend/server.js",
+  "build": "npm install --prefix frontend && npm run build --prefix frontend"
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
