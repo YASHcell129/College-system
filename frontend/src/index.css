@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fb;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+}
+
+/* Search */
+.search {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* Cards */
+.card {
+  padding: 20px;
+  border-radius: 15px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Colors */
+.pink { background: #ffd6d6; }
+.purple { background: #e0d6ff; }
+.green { background: #d6ffe2; }
+.blue { background: #d6f0ff; }
+.yellow { background: #fff2cc; }
+.orange { background: #ffe0cc; }
+.cyan { background: #ccf9ff; }
+.red { background: #ffd6d6; }
+.teal { background: #ccfff5; }
+.dark { background: #e6e6e6; }
+.light { background: #f0f0f0; }
+.violet { background: #e6ccff; }
+
+/* Small grid */
+.grid-small {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.small-card {
+  flex: 1;
+  padding: 15px;
+  border-radius: 12px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Attendance Page */
+
+.attendance-container {
+  padding: 20px;
+}
+
+.summary-grid {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.summary-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+}
+
+.blue { background: #3498db; }
+.green { background: #2ecc71; }
+.purple { background: #9b59b6; }
+
+.table-container {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #f5f5f5;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.present {
+  color: green;
+  font-weight: bold;
+}
+
+.row:hover {
+  background: #f0f8ff;
+}
+
+.absent {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .summary-grid {
+    flex-direction: column;
+  }
+}
+
+/* Summary */
+.summary {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Logout */
+.logout {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+}
